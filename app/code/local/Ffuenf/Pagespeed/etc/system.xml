@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Magento
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Open Software License (OSL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/osl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@magentocommerce.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade Magento to newer
+* versions in the future. If you wish to customize Magento for your
+* needs please refer to http://www.magentocommerce.com for more information.
+*
+* @category    Ffuenf
+* @package     Ffuenf_Pagespeed
+* @author      Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+* @copyright   Copyright (c) 2014 ffuenf (http://www.ffuenf.de)
+* @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+  <tabs>
+    <ffuenf translate="label" module="ffuenf_pagespeed">
+      <label>ffuenf</label>
+      <sort_order>508</sort_order>
+    </ffuenf>
+  </tabs>
+  <sections>
+    <ffuenf_pagespeed translate="label" module="ffuenf_pagespeed">
+      <tab>ffuenf</tab>
+      <label>Pagespeed</label>
+      <sort_order>10</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
+      <groups>
+        <global translate="label" module="ffuenf_pagespeed">
+          <label>Global Configuration</label>
+          <sort_order>1000</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <filecachepath translate="label">
+              <label>FileCachePath</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>13</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </filecachepath>
+            <cacheflushfilename translate="label">
+              <label>CacheFlushFilename</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>13</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </cacheflushfilename>
+          </fields>
+        </global>
+      </groups>
+    </ffuenf_pagespeed>
+  </sections>
+</config>

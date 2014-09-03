@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Magento
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Open Software License (OSL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/osl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@magentocommerce.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade Magento to newer
+* versions in the future. If you wish to customize Magento for your
+* needs please refer to http://www.magentocommerce.com for more information.
+*
+* @category    Ffuenf
+* @package     Ffuenf_Pagespeed
+* @author      Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+* @copyright   Copyright (c) 2014 ffuenf (http://www.ffuenf.de)
+* @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+  <modules>
+    <Ffuenf_Pagespeed>
+      <version>1.0.0</version>
+    </Ffuenf_Pagespeed>
+  </modules>
+  <global>
+    <helpers>
+      <ffuenf_pagespeed>
+        <class>Ffuenf_Pagespeed_Helper</class>
+      </ffuenf_pagespeed>
+    </helpers>
+    <models>
+      <ffuenf_pagespeed>
+        <class>Ffuenf_Pagespeed_Model</class>
+      </ffuenf_pagespeed>
+    </models>
+    <blocks>
+      <ffuenf_pagespeed>
+        <class>Ffuenf_Pagespeed_Block</class>
+      </ffuenf_pagespeed>
+    </blocks>
+    <events>
+      <catalog_product_save_commit_after>
+        <observers>
+          <ffuenf_pagespeed_catalog_product_save_commit_after>
+            <class>ffuenf_pagespeed/observer_clear</class>
+            <method>clearCache</method>
+          </ffuenf_pagespeed_catalog_product_save_commit_after>
+        </observers>
+      </catalog_product_save_commit_after>
+      <clean_media_cache_after>
+        <observers>
+          <ffuenf_pagespeed_clean_media_cache_after>
+            <class>ffuenf_pagespeed/observer_clear</class>
+            <method>clearCache</method>
+          </ffuenf_pagespeed_clean_media_cache_after>
+        </observers>
+      </clean_media_cache_after>
+      <clean_catalog_images_cache_after>
+        <observers>
+          <ffuenf_pagespeed_clean_catalog_images_cache_after>
+            <class>ffuenf_pagespeed/observer_clear</class>
+            <method>clearCache</method>
+          </ffuenf_pagespeed_clean_catalog_images_cache_after>
+        </observers>
+      </clean_catalog_images_cache_after>
+      <cms_page_save_commit_after>
+        <observers>
+          <ffuenf_pagespeed_cms_page_save_commit_after>
+            <class>ffuenf_pagespeed/observer_clear</class>
+            <method>clearCache</method>
+          </ffuenf_pagespeed_cms_page_save_commit_after>
+        </observers>
+      </cms_page_save_commit_after>
+      <adminhtml_cache_flush_system>
+        <observers>
+          <ffuenf_pagespeed_adminhtml_cache_flush_system>
+            <class>ffuenf_pagespeed/observer_clear</class>
+            <method>clearCache</method>
+          </ffuenf_pagespeed_adminhtml_cache_flush_system>
+        </observers>
+      </adminhtml_cache_flush_system>
+      <adminhtml_cache_flush_all>
+        <observers>
+          <ffuenf_pagespeed_adminhtml_cache_flush_all>
+            <class>ffuenf_pagespeed/observer_clear</class>
+            <method>clearCache</method>
+          </ffuenf_pagespeed_adminhtml_cache_flush_all>
+        </observers>
+      </adminhtml_cache_flush_all>
+    </events>
+  </global>
+  <frontend>
+    <routers>
+      <ffuenf_pagespeed>
+        <use>standard</use>
+        <args>
+          <module>Ffuenf_Pagespeed</module>
+          <frontName>ffuenf_pagespeed</frontName>
+        </args>
+      </ffuenf_pagespeed>
+    </routers>
+  </frontend>
+  <admin>
+    <routers>
+      <adminhtml>
+        <args>
+          <modules>
+            <ffuenf_pagespeed after="Mage_Adminhtml">Ffuenf_Pagespeed</ffuenf_pagespeed>
+          </modules>
+        </args>
+      </adminhtml>
+    </routers>
+  </admin>
+  <adminhtml>
+    <layout>
+      <updates>
+        <ffuenf_pagespeed>
+          <file>ffuenf_pagespeed.xml</file>
+        </ffuenf_pagespeed>
+      </updates>
+    </layout>
+  </adminhtml>
+  <default>
+    <ffuenf_pagespeed>
+      <global>
+        <filecachepath>/var/ngx_pagespeed_cache</filecachepath>
+        <cacheflushfilename>cache.flush</cacheflushfilename>
+      </global>
+    </ffuenf_pagespeed>
+  </default>
+</config>
