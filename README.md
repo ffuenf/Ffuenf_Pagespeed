@@ -2,8 +2,10 @@ Ffuenf_Pagespeed
 ================
 [![GitHub tag](http://img.shields.io/github/tag/ffuenf/Ffuenf_Pagespeed.svg)][tag]
 [![Gittip](http://img.shields.io/gittip/arosenhagen.svg)][gittip]
+[![Build Status](http://img.shields.io/travis/ffuenf/Ffuenf_Pagespeed.svg)][travis]
 
 [tag]: https://github.com/ffuenf/Ffuenf_Pagespeed/tags
+[travis]: https://travis-ci.org/ffuenf/Ffuenf_Pagespeed
 [gittip]: https://www.gittip.com/arosenhagen
 
 Ffuenf_Pagespeed is a extension for Magento Community Edition that adds support for ngx_pagespeed to the cache clearing mechanisms.
@@ -13,10 +15,18 @@ Platform
 
 The following versions are supported and tested:
 
-* Magento Community Edition 1.7.2.0
+* Magento Community Edition 1.5.0.1
+* Magento Community Edition 1.6.0.0
+* Magento Community Edition 1.6.1.0
+* Magento Community Edition 1.6.2.0
+* Magento Community Edition 1.7.0.0
+* Magento Community Edition 1.7.0.1
+* Magento Community Edition 1.7.0.2
 * Magento Community Edition 1.8.0.0
 * Magento Community Edition 1.8.1.0
+* Magento Community Edition 1.9.0.0
 * Magento Community Edition 1.9.0.1
+* Magento Community Edition 1.9.1.0
 
 Other versions are assumed to work.
 
@@ -35,12 +45,19 @@ Development
 5. Push your changes to GitHub
 6. Open a Pull Request
 
+Testing
+-------
+
+This extenion has automated unit-tests via php-unit setup to run on [travis-ci](https://travis-ci.org/ffuenf/Ffuenf_DevTools).
+
+See .travis.yml for detailed information.
+
 License and Author
 ------------------
 
 - Author:: Achim Rosenhagen (<a.rosenhagen@ffuenf.de>)
 
-- Copyright:: 2014, ffuenf
+- Copyright:: 2015, ffuenf
 
 Licensed under the Open Software License (OSL 3.0)
 you may not use these files except in compliance with the License.

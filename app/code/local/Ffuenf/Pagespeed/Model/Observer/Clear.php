@@ -21,13 +21,13 @@
 * @category    Ffuenf
 * @package     Ffuenf_Pagespeed
 * @author      Achim Rosenhagen <a.rosenhagen@ffuenf.de>
-* @copyright   Copyright (c) 2014 ffuenf (http://www.ffuenf.de)
+* @copyright   Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
 * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 class Ffuenf_Pagespeed_Model_Observer_Clear extends Varien_Event_Observer {
   public function clearCache($event) {
-    $filecachepath = Mage::getStoreConfig('ffuenf_pagespeed/global/filecachepath');
-    $cacheflushfilename = Mage::getStoreConfig('ffuenf_pagespeed/global/cacheflushfilename');
+    $filecachepath = Mage::getStoreConfig('ffuenf_pagespeed/general/filecachepath');
+    $cacheflushfilename = Mage::getStoreConfig('ffuenf_pagespeed/general/cacheflushfilename');
     if($filecachepath != '') {
       exec('rm -rf '.$filecachepath.'/*');
     }

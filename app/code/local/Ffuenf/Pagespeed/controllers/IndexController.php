@@ -21,8 +21,10 @@
 * @category    Ffuenf
 * @package     Ffuenf_Pagespeed
 * @author      Achim Rosenhagen <a.rosenhagen@ffuenf.de>
-* @copyright   Copyright (c) 2014 ffuenf (http://www.ffuenf.de)
+* @copyright   Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
 * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
-class Ffuenf_Pagespeed_IndexController extends Mage_Core_Controller_Front_Action {
+class Ffuenf_Pagespeed_IndexController extends Mage_Core_Controller_Front_Action
+{
+  
 }
