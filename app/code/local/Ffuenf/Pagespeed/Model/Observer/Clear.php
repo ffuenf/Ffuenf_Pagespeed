@@ -1,37 +1,29 @@
 <?php
 /**
-* Magento
-*
-* NOTICE OF LICENSE
-*
-* This source file is subject to the Open Software License (OSL 3.0)
-* that is bundled with this package in the file LICENSE.txt.
-* It is also available through the world-wide-web at this URL:
-* http://opensource.org/licenses/osl-3.0.php
-* If you did not receive a copy of the license and are unable to
-* obtain it through the world-wide-web, please send an email
-* to license@magentocommerce.com so we can send you a copy immediately.
-*
-* DISCLAIMER
-*
-* Do not edit or add to this file if you wish to upgrade Magento to newer
-* versions in the future. If you wish to customize Magento for your
-* needs please refer to http://www.magentocommerce.com for more information.
-*
-* @category    Ffuenf
-* @package     Ffuenf_Pagespeed
-* @author      Achim Rosenhagen <a.rosenhagen@ffuenf.de>
-* @copyright   Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
-* @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * Ffuenf_Pagespeed extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category   Ffuenf
+ * @package    Ffuenf_Pagespeed
+ * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+ * @copyright  Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
+ * @license    http://opensource.org/licenses/mit-license.php MIT License
 */
+
 class Ffuenf_Pagespeed_Model_Observer_Clear extends Varien_Event_Observer {
-  public function clearCache($event) {
-    $filecachepath = Mage::getStoreConfig('ffuenf_pagespeed/general/filecachepath');
-    $cacheflushfilename = Mage::getStoreConfig('ffuenf_pagespeed/general/cacheflushfilename');
-    if($filecachepath != '') {
-      exec('rm -rf '.$filecachepath.'/*');
+    public function clearCache($event) {
+        $filecachepath = Mage::getStoreConfig('pagespeed/general/filecachepath');
+        $cacheflushfilename = Mage::getStoreConfig('pagespeed/general/cacheflushfilename');
+        if($filecachepath != '') {
+            exec('rm -rf '.$filecachepath.'/*');
+        }
+        exec('touch '.$filecachepath.'/'.$cacheflushfilename);
+        return true;
     }
-    exec('touch '.$filecachepath.'/'.$cacheflushfilename);
-    return true;
-  }
 }
