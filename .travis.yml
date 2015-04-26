@@ -12,18 +12,10 @@ matrix:
   - php: hhvm
 env:
   matrix:
-  - MAGENTO_VERSION=magento-ce-1.5.0.1
-  - MAGENTO_VERSION=magento-ce-1.6.0.0
-  - MAGENTO_VERSION=magento-ce-1.6.1.0
-  - MAGENTO_VERSION=magento-ce-1.6.2.0
-  - MAGENTO_VERSION=magento-ce-1.7.0.0
-  - MAGENTO_VERSION=magento-ce-1.7.0.1
-  - MAGENTO_VERSION=magento-ce-1.7.0.2
-  - MAGENTO_VERSION=magento-ce-1.8.0.0
-  - MAGENTO_VERSION=magento-ce-1.8.1.0
-  - MAGENTO_VERSION=magento-ce-1.9.0.0
-  - MAGENTO_VERSION=magento-ce-1.9.0.1
   - MAGENTO_VERSION=magento-ce-1.9.1.0
+  - MAGENTO_VERSION=magento-ce-1.8.1.0
+  - MAGENTO_VERSION=magento-ce-1.7.0.2
+  - MAGENTO_VERSION=magento-ce-1.6.2.0
   global:
     secure: qDOymIN1EkzkH8g9NyZ/d0zl/yBtRJFfSrDISQIKaimIgneiC6OQbWAV3BZQbqepJ1n9i0dg6pQ8/CMUOhtYmHWgQN6nfFTEXv0a7WXN4GfMjZ/8+e8vKAJiOY+4xlCjpzBvsYMBRvBqG/l5hwwRscyjsc3ag6NG41rwAij/7Xc=
 script:
