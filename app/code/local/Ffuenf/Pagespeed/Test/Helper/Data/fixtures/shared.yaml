@@ -1,4 +1,4 @@
 config:
   default/pagespeed/general/enabled: 1
-  default/pagespeed/general/filecachepath: /var/ngx_pagespeed_cache
-  default/pagespeed/general/cacheflushfilename: cache.flush
+  default/pagespeed/general/filecachepath: '/var/ngx_pagespeed_cache'
+  default/pagespeed/general/cacheflushfilename: 'cache.flush'

@@ -16,8 +16,8 @@
  * @license    http://opensource.org/licenses/mit-license.php MIT License
 */
 
-class Ffuenf_Pagespeed_Helper_Data extends Mage_Core_Helper_Abstract {
-
+class Ffuenf_Pagespeed_Helper_Data extends Ffuenf_Pagespeed_Helper_Core
+{
     /**
      * Path for the config for extension active status
      */
@@ -26,12 +26,12 @@ class Ffuenf_Pagespeed_Helper_Data extends Mage_Core_Helper_Abstract {
     /**
      * Path for the filecachepath
      */
-    const CONFIG_FILECACHEPATH = 'pagespeed/general/filecachepath';
+    const CONFIG_EXTENSION_FILECACHEPATH = 'pagespeed/general/filecachepath';
 
     /**
      * Path for the filecachepath
      */
-    const CONFIG_CACHEFLUSHFILENAME = 'pagespeed/general/cacheflushfilename';
+    const CONFIG_EXTENSION_CACHEFLUSHFILENAME = 'pagespeed/general/cacheflushfilename';
 
     /**
      * Variable for if the extension is active
@@ -45,14 +45,14 @@ class Ffuenf_Pagespeed_Helper_Data extends Mage_Core_Helper_Abstract {
      *
      * @var string
      */
-    protected $bFilecachepath;
+    protected $sFilecachepath;
 
     /**
      * Variable for cacheflushfilename
      *
      * @var string
      */
-    protected $bCacheflushfilename;
+    protected $sCacheflushfilename;
 
     /**
      * Check to see if the extension is active
@@ -61,35 +61,26 @@ class Ffuenf_Pagespeed_Helper_Data extends Mage_Core_Helper_Abstract {
      */
     public function isExtensionActive()
     {
-        if ($this->bExtensionActive === null) {
-            $this->bExtensionActive = Mage::getStoreConfigFlag(self::CONFIG_EXTENSION_ACTIVE);
-        }
-        return $this->bExtensionActive;
+        return $this->getStoreFlag(self::CONFIG_EXTENSION_ACTIVE, 'bExtensionActive');
     }
 
     /**
-     * Get filecachepath
+     * Check to see if filecachepath is set correctly
      *
      * @return string
      */
     public function getFilecachepath()
     {
-        if ($this->$bFilecachepath === null) {
-            $this->$bFilecachepath = Mage::getStoreConfigFlag(self::CONFIG_FILECACHEPATH);
-        }
-        return $this->$bFilecachepath;
+        return $this->getStoreConfig(self::CONFIG_EXTENSION_FILECACHEPATH, 'sFilecachepath');
     }
 
     /**
-     * Get cacheflushfilename
+     * Check to see if cacheflushfilename is set correctly
      *
      * @return string
      */
     public function getCacheflushfilename()
     {
-        if ($this->$bCacheflushfilename === null) {
-            $this->$bCacheflushfilename = Mage::getStoreConfigFlag(self::CONFIG_CACHEFLUSHFILENAME);
-        }
-        return $this->$bCacheflushfilename;
+        return $this->getStoreConfig(self::CONFIG_EXTENSION_CACHEFLUSHFILENAME, 'sCacheflushfilename');
     }
 }

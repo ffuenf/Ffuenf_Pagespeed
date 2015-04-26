@@ -44,8 +44,9 @@ class Ffuenf_Pagespeed_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
     */
     public function testGetFilecachepath()
     {
-        $this->assertTrue(
+        $this->assertEquals(
             Mage::helper('ffuenf_pagespeed')->getFilecachepath(),
+            '/var/ngx_pagespeed_cache',
             'Filecachpath is not set please check config'
         );
     }
@@ -57,8 +58,9 @@ class Ffuenf_Pagespeed_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
     */
     public function testGetCacheflushfilename()
     {
-        $this->assertTrue(
+        $this->assertEquals(
             Mage::helper('ffuenf_pagespeed')->getCacheflushfilename(),
+            'cache.flush',
             'Cacheflushfilename is not set please check config'
         );
     }
