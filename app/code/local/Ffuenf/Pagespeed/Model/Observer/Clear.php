@@ -16,11 +16,14 @@
  * @license    http://opensource.org/licenses/mit-license.php MIT License
 */
 
-class Ffuenf_Pagespeed_Model_Observer_Clear extends Varien_Event_Observer {
-    public function clearCache($event) {
-        $filecachepath = Mage::getStoreConfig('pagespeed/general/filecachepath');
-        $cacheflushfilename = Mage::getStoreConfig('pagespeed/general/cacheflushfilename');
-        if($filecachepath != '') {
+class Ffuenf_Pagespeed_Model_Observer_Clear extends Varien_Event_Observer
+{
+
+    public function clearCache($event)
+    {
+        $filecachepath = Mage::helper('ffuenf_pagespeed')->getFilecachepath();
+        $cacheflushfilename = Mage::helper('ffuenf_pagespeed')->getCacheflushfilename();
+        if ($filecachepath != '') {
             exec('rm -rf '.$filecachepath.'/*');
         }
         exec('touch '.$filecachepath.'/'.$cacheflushfilename);

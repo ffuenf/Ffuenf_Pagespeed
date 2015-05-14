@@ -21,7 +21,7 @@ The following versions are supported and tested:
 * Magento Community Edition 1.6.2.0
 * Magento Community Edition 1.7.0.2
 * Magento Community Edition 1.8.1.0
-* Magento Community Edition 1.9.1.0
+* Magento Community Edition 1.9.1.1
 
 Other versions are assumed to work.
 
@@ -57,11 +57,6 @@ Development
 4. Make your changes/patches/fixes, committing appropriately
 5. Push your changes to GitHub
 6. Open a Pull Request
-
-Credits
--------
-
-- Harshit <support@cubixws.co.uk>
 
 License and Author
 ------------------
