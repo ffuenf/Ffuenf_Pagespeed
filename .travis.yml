@@ -19,8 +19,7 @@ env:
   global:
     secure: qDOymIN1EkzkH8g9NyZ/d0zl/yBtRJFfSrDISQIKaimIgneiC6OQbWAV3BZQbqepJ1n9i0dg6pQ8/CMUOhtYmHWgQN6nfFTEXv0a7WXN4GfMjZ/8+e8vKAJiOY+4xlCjpzBvsYMBRvBqG/l5hwwRscyjsc3ag6NG41rwAij/7Xc=
 script:
-- curl -sSL https://raw.githubusercontent.com/ffuenf/MageTestStand/master/setup.sh
-  | bash
+  - curl -sSL https://raw.githubusercontent.com/ffuenf/MageTestStand/master/setup.sh | bash
 notifications:
   slack:
     secure: a+wBA1TTESXjERr9vDASjKyKgPR71A9s/vwQEoaG0fDTwSZoWcDk6VAW8E1FMqBjFEsMfHMof6EmM435pkEvqNHRU/sNsYcrCy8tt2mV8eQM30GXxpRYVErrmOGK14XMOM/wxxZ6atI3BVVDbknNxUn5pb2soWwRnse0zISaQRg=
