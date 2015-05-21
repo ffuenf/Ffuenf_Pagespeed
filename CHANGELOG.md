@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of Ffuenf_Pagespeed.
 
+## 1.0.3 (May 21, 2015)
+
+* remove composer dependencies (fixes #1)
+
 ## 1.0.2 (April 26, 2015)
 
 * add MageTestStand

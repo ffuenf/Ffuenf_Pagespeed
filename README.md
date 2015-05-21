@@ -1,15 +1,16 @@
-Ffuenf_Pagespeed
-================
+Ffuenf_DeleteOrder
+==================
 [![GitHub tag](https://img.shields.io/github/tag/ffuenf/Ffuenf_Pagespeed.svg)][tag]
 [![Build Status](https://img.shields.io/travis/ffuenf/Ffuenf_Pagespeed.svg)][travis]
+[![Code Quality](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_Pagespeed/badges/quality-score.png)][code_quality]
+[![Code Coverage](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_Pagespeed/badges/coverage.png)][code_coverage]
 [![Code Climate](https://codeclimate.com/github/ffuenf/Ffuenf_Pagespeed/badges/gpa.svg)][codeclimate_gpa]
-[![Test Coverage](https://codeclimate.com/github/ffuenf/Ffuenf_Pagespeed/badges/coverage.svg)][codeclimate_coverage]
 
 [tag]: https://github.com/ffuenf/Ffuenf_Pagespeed
 [travis]: https://travis-ci.org/ffuenf/Ffuenf_Pagespeed
+[code_quality]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_Pagespeed
+[code_coverage]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_Pagespeed
 [codeclimate_gpa]: https://codeclimate.com/github/ffuenf/Ffuenf_Pagespeed
-[codeclimate_coverage]: https://codeclimate.com/github/ffuenf/Ffuenf_Pagespeed
-
 
 This is a extension for Magento Community Edition that adds support for ngx_pagespeed to the cache clearing mechanisms.
 
