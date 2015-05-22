@@ -1,5 +1,5 @@
-Ffuenf_DeleteOrder
-==================
+Ffuenf_Pagespeed
+================
 [![GitHub tag](https://img.shields.io/github/tag/ffuenf/Ffuenf_Pagespeed.svg)][tag]
 [![Build Status](https://img.shields.io/travis/ffuenf/Ffuenf_Pagespeed.svg)][travis]
 [![Code Quality](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_Pagespeed/badges/quality-score.png)][code_quality]
@@ -40,7 +40,7 @@ Deinstallation
 
 Use [modman](https://github.com/colinmollenhour/modman) to clear all files and symlinks:
 ```
-modman clean Ffuenf_FixCatalogOptionSort
+modman clean Ffuenf_Pagespeed
 ```
 see `uninstall.sql` to clear all entries of this extension from your database.
 

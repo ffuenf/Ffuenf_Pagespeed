@@ -19,6 +19,11 @@
 class Ffuenf_Pagespeed_Model_Observer_Clear extends Varien_Event_Observer
 {
 
+    /**
+     * Clear the pagespeed cache
+     *
+     * @return bool
+     */
     public function clearCache($event)
     {
         $filecachepath = Mage::helper('ffuenf_pagespeed')->getFilecachepath();

@@ -68,7 +68,6 @@ checks:
             interface_name: '^[A-Z][a-zA-Z0-9]*_?Interface$'
             type_name: '^[A-Z][a-zA-Z0-9_]*$'
             exception_name: '^[A-Z][a-zA-Z0-9]*Exception$'
-            isser_method_name: '^(?:is|has|should|may|supports|persist)'
         no_commented_out_code: true
         no_duplicate_arguments: true
         no_else_if_statements: true

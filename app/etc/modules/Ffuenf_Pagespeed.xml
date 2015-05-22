@@ -18,10 +18,10 @@
 */
 -->
 <config>
-  <modules>
-    <Ffuenf_Pagespeed>
-      <active>true</active>
-      <codePool>local</codePool>
-    </Ffuenf_Pagespeed>
-  </modules>
+    <modules>
+        <Ffuenf_Pagespeed>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ffuenf_Pagespeed>
+    </modules>
 </config>

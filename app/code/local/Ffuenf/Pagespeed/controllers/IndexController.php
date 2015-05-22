@@ -17,4 +17,6 @@
 */
 
 class Ffuenf_Pagespeed_IndexController extends Mage_Core_Controller_Front_Action
-{}
+{
+    
+}

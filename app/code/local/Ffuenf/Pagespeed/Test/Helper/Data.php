@@ -24,11 +24,11 @@
 class Ffuenf_Pagespeed_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
 {
     /**
-    * Tests is extension active
-    *
-    * @test
-    * @covers Ffuenf_Pagespeed_Helper_Data::isExtensionActive
-    */
+     * Tests is extension active
+     *
+     * @test
+     * @covers Ffuenf_Pagespeed_Helper_Data::isExtensionActive
+     */
     public function testIsExtensionActive()
     {
         $this->assertTrue(
@@ -37,11 +37,11 @@ class Ffuenf_Pagespeed_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
         );
     }
     /**
-    * Tests filecachepath
-    *
-    * @test
-    * @covers Ffuenf_Pagespeed_Helper_Data::GetFilecachepath
-    */
+     * Tests filecachepath
+     *
+     * @test
+     * @covers Ffuenf_Pagespeed_Helper_Data::GetFilecachepath
+     */
     public function testGetFilecachepath()
     {
         $this->assertEquals(
@@ -51,11 +51,11 @@ class Ffuenf_Pagespeed_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
         );
     }
     /**
-    * Tests cacheflushfilename
-    *
-    * @test
-    * @covers Ffuenf_Pagespeed_Helper_Data::GetFilecachepath
-    */
+     * Tests cacheflushfilename
+     *
+     * @test
+     * @covers Ffuenf_Pagespeed_Helper_Data::GetFilecachepath
+     */
     public function testGetCacheflushfilename()
     {
         $this->assertEquals(
