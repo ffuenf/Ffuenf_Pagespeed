@@ -1,61 +1,61 @@
 <?php
+
 /**
- * Ffuenf_Pagespeed extension
- * 
+ * Ffuenf_Pagespeed extension.
+ *
  * NOTICE OF LICENSE
- * 
+ *
  * This source file is subject to the MIT License
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/mit-license.php
- * 
+ *
  * @category   Ffuenf
- * @package    Ffuenf_Pagespeed
+ *
  * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
  * @copyright  Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
  * @license    http://opensource.org/licenses/mit-license.php MIT License
-*/
-
+ */
 class Ffuenf_Pagespeed_Helper_Data extends Ffuenf_Pagespeed_Helper_Core
 {
     /**
-     * Path for the config for extension active status
+     * Path for the config for extension active status.
      */
     const CONFIG_EXTENSION_ACTIVE = 'pagespeed/general/enabled';
 
     /**
-     * Path for the filecachepath
+     * Path for the filecachepath.
      */
     const CONFIG_EXTENSION_FILECACHEPATH = 'pagespeed/general/filecachepath';
 
     /**
-     * Path for the filecachepath
+     * Path for the filecachepath.
      */
     const CONFIG_EXTENSION_CACHEFLUSHFILENAME = 'pagespeed/general/cacheflushfilename';
 
     /**
-     * Variable for if the extension is active
+     * Variable for if the extension is active.
      *
      * @var bool
      */
     protected $bExtensionActive;
 
     /**
-     * Variable for filecachepath
+     * Variable for filecachepath.
      *
      * @var string
      */
     protected $sFilecachepath;
 
     /**
-     * Variable for cacheflushfilename
+     * Variable for cacheflushfilename.
      *
      * @var string
      */
     protected $sCacheflushfilename;
 
     /**
-     * Check to see if the extension is active
+     * Check to see if the extension is active.
      *
      * @return bool
      */
@@ -65,7 +65,7 @@ class Ffuenf_Pagespeed_Helper_Data extends Ffuenf_Pagespeed_Helper_Core
     }
 
     /**
-     * Check to see if filecachepath is set correctly
+     * Check to see if filecachepath is set correctly.
      *
      * @return string
      */
@@ -75,7 +75,7 @@ class Ffuenf_Pagespeed_Helper_Data extends Ffuenf_Pagespeed_Helper_Core
     }
 
     /**
-     * Check to see if cacheflushfilename is set correctly
+     * Check to see if cacheflushfilename is set correctly.
      *
      * @return string
      */
