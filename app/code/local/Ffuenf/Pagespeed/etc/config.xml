@@ -20,7 +20,7 @@
 <config>
     <modules>
         <Ffuenf_Pagespeed>
-            <version>1.0.3</version>
+            <version>1.0.4</version>
         </Ffuenf_Pagespeed>
     </modules>
     <global>
