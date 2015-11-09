@@ -21,13 +21,26 @@ Platform
 
 The following versions are supported and tested:
 
-* Magento Community Edition 1.6.2.0
-* Magento Community Edition 1.7.0.2
-* Magento Community Edition 1.8.1.0
-* Magento Community Edition 1.9.1.1
+* Magento Community Edition 1.9.2.2
 * Magento Community Edition 1.9.2.1
+* Magento Community Edition 1.9.2.0
+* Magento Community Edition 1.8.1.0
+* Magento Community Edition 1.7.0.2
+* Magento Community Edition 1.6.2.0
 
 Other versions are assumed to work.
+
+Requirements
+------------
+
+|                                                                     | PHP 5.3        | PHP 5.4        | PHP 5.5           | PHP 5.6       | PHP 7.0       |
+| ------------------------------------------------------------------- | -------------- | -------------- | ----------------- | ------------- | ------------- |
+| [EOL](https://secure.php.net/supported-versions.php) / STABLE / RC  | EOL            | EOL            | STABLE            | **STABLE**    | RC            |
+| automated tests on [travis]                                         | allow failure  | allow failure  | **required pass** | allow failure | allow failure |
+
+Magento Community Edition officially supports PHP 5.4 and PHP 5.5.
+
+Non-official compatibility to PHP 5.6 may be reached by following the tips on [Use of iconv.internal_encoding is deprecated](https://magento.stackexchange.com/questions/34015/magento-1-9-php-5-6-use-of-iconv-internal-encoding-is-deprecated).
 
 Installation
 ------------
@@ -40,7 +53,6 @@ modman clone https://github.com/ffuenf/Ffuenf_Pagespeed
 
 Deinstallation
 --------------
-
 Use [modman](https://github.com/colinmollenhour/modman) to clear all files and symlinks:
 ```
 modman clean Ffuenf_Pagespeed
@@ -61,6 +73,17 @@ Development
 4. Make your changes/patches/fixes, committing appropriately
 5. Push your changes to GitHub
 6. Open a Pull Request
+
+Testing
+-------
+This extension comes with a minimum setup of unit tests which are the base for the [travis] build status.
+See app/code/local/<Namespace>/<Extension>/Test for more information.
+
+Demo
+----
+You may spin up your own local virtualbox VM by running `vagrant up` from within the project directory.
+This will setup a current magento installation with the minimum settings for the extension to work.
+See the `Vagrantfile` for more information.
 
 License and Author
 ------------------

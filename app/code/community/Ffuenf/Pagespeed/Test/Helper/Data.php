@@ -16,22 +16,25 @@
  * @copyright  Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
  * @license    http://opensource.org/licenses/mit-license.php MIT License
  */
-class Ffuenf_Pagespeed_Model_Observer_Clear extends Varien_Event_Observer
+
+/**
+ * @see Ffuenf_Pagespeed_Helper_Data
+ *
+ * @loadSharedFixture shared
+ */
+class Ffuenf_Pagespeed_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
 {
     /**
-     * Clear the pagespeed cache.
+     * Tests is extension active.
      *
-     * @return bool
+     * @test
+     * @covers Ffuenf_Pagespeed_Helper_Data::isExtensionActive
      */
-    public function clearCache()
+    public function testIsExtensionActive()
     {
-        $filecachepath = Mage::helper('ffuenf_pagespeed')->getFilecachepath();
-        $cacheflushfilename = Mage::helper('ffuenf_pagespeed')->getCacheflushfilename();
-        if ($filecachepath != '') {
-            exec('rm -rf '.$filecachepath.'/*');
-        }
-        exec('touch '.$filecachepath.'/'.$cacheflushfilename);
-
-        return true;
+        $this->assertTrue(
+            Mage::helper('pagespeed')->isExtensionActive(),
+            'Extension is not active please check config'
+        );
     }
 }

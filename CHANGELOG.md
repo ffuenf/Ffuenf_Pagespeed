@@ -2,6 +2,12 @@
 
 This file is used to list changes made in each version of Ffuenf_Pagespeed.
 
+## 1.0.5 (November 9, 2015)
+
+* add more tests
+* switch to community codepool
+* switch events to adminhtml
+
 ## 1.0.4 (October 30, 2015)
 
 * add test whether extension uses the old-style admin routing.

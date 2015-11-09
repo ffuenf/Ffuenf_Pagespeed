@@ -21,7 +21,7 @@
     <modules>
         <Ffuenf_Pagespeed>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </Ffuenf_Pagespeed>
     </modules>
 </config>
