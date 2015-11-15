@@ -2,6 +2,12 @@
 
 This file is used to list changes made in each version of Ffuenf_Pagespeed.
 
+## 1.0.6 (November 15, 2015)
+
+* add dependency to [Ffuenf_Common](https://github.com/ffuenf/Ffuenf_Common)
+* common extension structure
+* add more tests
+
 ## 1.0.5 (November 9, 2015)
 
 * add more tests

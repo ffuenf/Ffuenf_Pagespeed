@@ -1,3 +1,5 @@
+<a href="http://www.ffuenf.de" title="ffuenf - code • design • e-commerce"><img src="https://github.com/ffuenf/Ffuenf_Common/blob/master/skin/adminhtml/default/default/ffuenf/ffuenf.png" alt="ffuenf - code • design • e-commerce" /></a>
+
 Ffuenf_Pagespeed
 ================
 [![GitHub tag](https://img.shields.io/github/tag/ffuenf/Ffuenf_Pagespeed.svg)][tag]
@@ -6,7 +8,6 @@ Ffuenf_Pagespeed
 [![Code Coverage](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_Pagespeed/badges/coverage.png)][code_coverage]
 [![Code Climate](https://codeclimate.com/github/ffuenf/Ffuenf_Pagespeed/badges/gpa.svg)][codeclimate_gpa]
 [![PayPal Donate](https://img.shields.io/badge/paypal-donate-blue.svg)][paypal_donate]
-
 [tag]: https://github.com/ffuenf/Ffuenf_Pagespeed
 [travis]: https://travis-ci.org/ffuenf/Ffuenf_Pagespeed
 [code_quality]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_Pagespeed
@@ -48,6 +49,7 @@ Installation
 Use [modman](https://github.com/colinmollenhour/modman) to install:
 ```
 modman init
+modman clone https://github.com/ffuenf/Ffuenf_Common
 modman clone https://github.com/ffuenf/Ffuenf_Pagespeed
 ```
 

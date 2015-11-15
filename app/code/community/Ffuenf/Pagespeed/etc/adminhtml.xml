@@ -30,7 +30,7 @@
                             <config>
                                 <children>
                                     <pagespeed translate="title" module="ffuenf_pagespeed">
-                                        <title>Pagespeed Module</title>
+                                        <title>Pagespeed</title>
                                     </pagespeed>
                                 </children>
                             </config>

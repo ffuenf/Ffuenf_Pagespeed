@@ -37,4 +37,34 @@ class Ffuenf_Pagespeed_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
             'Extension is not active please check config'
         );
     }
+    
+    /**
+     * Tests filecachepath.
+     *
+     * @test
+     * @covers Ffuenf_Pagespeed_Helper_Data::GetFilecachepath
+     */
+    public function testGetFilecachepath()
+    {
+        $this->assertEquals(
+            Mage::helper('pagespeed')->getFilecachepath(),
+            '/var/ngx_pagespeed_cache',
+            'Filecachpath is not set please check config'
+        );
+    }
+
+    /**
+     * Tests cacheflushfilename.
+     *
+     * @test
+     * @covers Ffuenf_Pagespeed_Helper_Data::GetFilecachepath
+     */
+    public function testGetCacheflushfilename()
+    {
+        $this->assertEquals(
+            Mage::helper('pagespeed')->getCacheflushfilename(),
+            'cache.flush',
+            'Cacheflushfilename is not set please check config'
+        );
+    }
 }

@@ -67,34 +67,4 @@ class Ffuenf_Pagespeed_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_Config
             'This extension uses old-style admin routing which is not compatible with SUPEE-6788 / Magento 1.9.2.2+'
         );
     }
-
-    /**
-     * Tests filecachepath.
-     *
-     * @test
-     * @covers Ffuenf_Pagespeed_Helper_Data::GetFilecachepath
-     */
-    public function testGetFilecachepath()
-    {
-        $this->assertEquals(
-            Mage::helper('pagespeed')->getFilecachepath(),
-            '/var/ngx_pagespeed_cache',
-            'Filecachpath is not set please check config'
-        );
-    }
-
-    /**
-     * Tests cacheflushfilename.
-     *
-     * @test
-     * @covers Ffuenf_Pagespeed_Helper_Data::GetFilecachepath
-     */
-    public function testGetCacheflushfilename()
-    {
-        $this->assertEquals(
-            Mage::helper('pagespeed')->getCacheflushfilename(),
-            'cache.flush',
-            'Cacheflushfilename is not set please check config'
-        );
-    }
 }
