@@ -27,7 +27,7 @@ class Ffuenf_Pagespeed_Test_Model_Observer_Clear extends EcomDev_PHPUnit_Test_Ca
     public function testModelAlias()
     {
         $this->assertModelAlias(
-            'pagespeed/observer_clear',
+            'ffuenf_pagespeed/observer_clear',
             'Ffuenf_Pagespeed_Model_Observer_Clear'
         );
     }
@@ -42,37 +42,37 @@ class Ffuenf_Pagespeed_Test_Model_Observer_Clear extends EcomDev_PHPUnit_Test_Ca
         $this->assertEventObserverDefined(
             'adminhtml',
             'catalog_product_save_commit_after',
-            'pagespeed/observer_clear',
+            'ffuenf_pagespeed/observer_clear',
             'clearCache'
         );
         $this->assertEventObserverDefined(
             'adminhtml',
             'clean_media_cache_after',
-            'pagespeed/observer_clear',
+            'ffuenf_pagespeed/observer_clear',
             'clearCache'
         );
         $this->assertEventObserverDefined(
             'adminhtml',
             'clean_catalog_images_cache_after',
-            'pagespeed/observer_clear',
+            'ffuenf_pagespeed/observer_clear',
             'clearCache'
         );
         $this->assertEventObserverDefined(
             'adminhtml',
             'cms_page_save_commit_after',
-            'pagespeed/observer_clear',
+            'ffuenf_pagespeed/observer_clear',
             'clearCache'
         );
         $this->assertEventObserverDefined(
             'adminhtml',
             'adminhtml_cache_flush_system',
-            'pagespeed/observer_clear',
+            'ffuenf_pagespeed/observer_clear',
             'clearCache'
         );
         $this->assertEventObserverDefined(
             'adminhtml',
             'adminhtml_cache_flush_all',
-            'pagespeed/observer_clear',
+            'ffuenf_pagespeed/observer_clear',
             'clearCache'
         );
     }

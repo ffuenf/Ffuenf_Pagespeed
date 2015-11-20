@@ -41,7 +41,7 @@ class Ffuenf_Pagespeed_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_Config
     public function testHelperAliases()
     {
         $this->assertHelperAlias(
-            'pagespeed',
+            'ffuenf_pagespeed',
             'Ffuenf_Pagespeed_Helper_Data'
         );
     }

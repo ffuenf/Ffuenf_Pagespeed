@@ -20,24 +20,24 @@
 <config>
     <modules>
         <Ffuenf_Pagespeed>
-            <version>1.0.6</version>
+            <version>1.0.7</version>
         </Ffuenf_Pagespeed>
     </modules>
     <global>
         <helpers>
-            <pagespeed>
+            <ffuenf_pagespeed>
                 <class>Ffuenf_Pagespeed_Helper</class>
-            </pagespeed>
+            </ffuenf_pagespeed>
         </helpers>
         <blocks>
-            <pagespeed>
+            <ffuenf_pagespeed>
                 <class>Ffuenf_Pagespeed_Block</class>
-            </pagespeed>
+            </ffuenf_pagespeed>
         </blocks>
         <models>
-            <pagespeed>
+            <ffuenf_pagespeed>
                 <class>Ffuenf_Pagespeed_Model</class>
-            </pagespeed>
+            </ffuenf_pagespeed>
         </models>
     </global>
     <adminhtml>
@@ -45,7 +45,7 @@
             <catalog_product_save_commit_after>
                 <observers>
                     <pagespeed_catalog_product_save_commit_after>
-                        <class>pagespeed/observer_clear</class>
+                        <class>ffuenf_pagespeed/observer_clear</class>
                         <method>clearCache</method>
                     </pagespeed_catalog_product_save_commit_after>
                 </observers>
@@ -53,7 +53,7 @@
             <clean_media_cache_after>
                 <observers>
                     <pagespeed_clean_media_cache_after>
-                        <class>pagespeed/observer_clear</class>
+                        <class>ffuenf_pagespeed/observer_clear</class>
                         <method>clearCache</method>
                     </pagespeed_clean_media_cache_after>
                 </observers>
@@ -61,7 +61,7 @@
             <clean_catalog_images_cache_after>
                 <observers>
                     <pagespeed_clean_catalog_images_cache_after>
-                        <class>pagespeed/observer_clear</class>
+                        <class>ffuenf_pagespeed/observer_clear</class>
                         <method>clearCache</method>
                     </pagespeed_clean_catalog_images_cache_after>
                 </observers>
@@ -69,7 +69,7 @@
             <cms_page_save_commit_after>
                 <observers>
                     <pagespeed_cms_page_save_commit_after>
-                        <class>pagespeed/observer_clear</class>
+                        <class>ffuenf_pagespeed/observer_clear</class>
                         <method>clearCache</method>
                     </pagespeed_cms_page_save_commit_after>
                 </observers>
@@ -77,7 +77,7 @@
             <adminhtml_cache_flush_system>
                 <observers>
                     <pagespeed_adminhtml_cache_flush_system>
-                        <class>pagespeed/observer_clear</class>
+                        <class>ffuenf_pagespeed/observer_clear</class>
                         <method>clearCache</method>
                     </pagespeed_adminhtml_cache_flush_system>
                 </observers>
@@ -85,7 +85,7 @@
             <adminhtml_cache_flush_all>
                 <observers>
                     <pagespeed_adminhtml_cache_flush_all>
-                        <class>pagespeed/observer_clear</class>
+                        <class>ffuenf_pagespeed/observer_clear</class>
                         <method>clearCache</method>
                     </pagespeed_adminhtml_cache_flush_all>
                 </observers>
@@ -93,13 +93,13 @@
         </events>
     </adminhtml>
     <default>
-        <pagespeed>
+        <ffuenf_pagespeed>
             <general>
-                <enabled>0</enabled>
+                <enable>0</enable>
                 <filecachepath>/var/ngx_pagespeed_cache</filecachepath>
                 <cacheflushfilename>cache.flush</cacheflushfilename>
             </general>
-        </pagespeed>
+        </ffuenf_pagespeed>
     </default>
     <phpunit>
         <suite>

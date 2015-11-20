@@ -29,9 +29,9 @@
                         <children>
                             <config>
                                 <children>
-                                    <pagespeed translate="title" module="ffuenf_pagespeed">
+                                    <ffuenf_pagespeed translate="title" module="ffuenf_pagespeed">
                                         <title>Pagespeed</title>
-                                    </pagespeed>
+                                    </ffuenf_pagespeed>
                                 </children>
                             </config>
                         </children>

@@ -21,17 +21,17 @@ class Ffuenf_Pagespeed_Helper_Data extends Ffuenf_Common_Helper_Core
     /**
      * Path for the config for extension active status.
      */
-    const CONFIG_EXTENSION_ACTIVE = 'pagespeed/general/enabled';
+    const CONFIG_EXTENSION_ACTIVE = 'ffuenf_pagespeed/general/enabled';
 
     /**
      * Path for the filecachepath.
      */
-    const CONFIG_EXTENSION_FILECACHEPATH = 'pagespeed/general/filecachepath';
+    const CONFIG_EXTENSION_FILECACHEPATH = 'ffuenf_pagespeed/general/filecachepath';
 
     /**
      * Path for the filecachepath.
      */
-    const CONFIG_EXTENSION_CACHEFLUSHFILENAME = 'pagespeed/general/cacheflushfilename';
+    const CONFIG_EXTENSION_CACHEFLUSHFILENAME = 'ffuenf_pagespeed/general/cacheflushfilename';
 
     /**
      * Variable for if the extension is active.

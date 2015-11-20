@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of Ffuenf_Pagespeed.
 
+## 1.0.7 (November 20, 2015)
+
+* convert namespace to ffuenf_pagespeed
+
 ## 1.0.6 (November 15, 2015)
 
 * add dependency to [Ffuenf_Common](https://github.com/ffuenf/Ffuenf_Common)
