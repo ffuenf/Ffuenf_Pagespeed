@@ -27,7 +27,7 @@ class Ffuenf_Pagespeed_Test_Block_Adminhtml_System_Config_Fieldset_Teaser extend
     public function testBlockAliases()
     {
         $this->assertBlockAlias(
-            'pagespeed/adminhtml_system_config_fieldset_teaser',
+            'ffuenf_pagespeed/adminhtml_system_config_fieldset_teaser',
             'Ffuenf_Pagespeed_Block_Adminhtml_System_Config_Fieldset_Teaser'
         );
     }
