@@ -22,6 +22,7 @@ matrix:
   - php: 7.0
     env: MAGENTO_VERSION=magento-mirror-1.8.1.0
 env:
+  - APPNAME=Ffuenf_Pagespeed
   matrix:
   - MAGENTO_VERSION=magento-ce-1.9.2.2
   - MAGENTO_VERSION=magento-ce-1.9.2.1
@@ -31,13 +32,15 @@ env:
   - MAGENTO_VERSION=magento-mirror-1.8.1.0
   - MAGENTO_VERSION=magento-mirror-1.7.0.2
   - MAGENTO_VERSION=magento-mirror-1.6.2.0
-  global:
-  - secure: lSVbp+tjJrrnBP+9VHc4y5XqDgwKNuS5mAIPafHCvlq8rFRqNW/QL9Kpnw1wswacwpWFrXPbjgJ62hbzRh90ejRqTwBM5C53ADXFpi5igb0xB5SY61yii4OgdI3B48nnPynJOzUtNpllzCtqE+FcL6AIUg4Ng3bIg2HZxEZMF4o=
-  - secure: ktD+uEAV2FAZOnmTIWwToD/Bila76y4RFeqrmo9lh1/9aZH+bEBcvgQp/sbrUR7c4yNEyeKl9r6RRzagxeiZtdA+IKrhtPYdHV/iu+eRyOeAmoQbRyuJpwzl56NC8rBuK/rWDR5i0xeOcdA26GWXQzgsLnBPYUyhEwKjZhkd0TU=
-  - secure: UOGLyIMti7ArSgE2ha55EuhRL7mQSv4TQgeDRVa1IQtwmpVYuticar8WfGeyWJWpt34iz3pGGp1dxo+SiSBQTLqso2jMisq9yRYJohfqd+i+PY/VXuFtBcIdRBJNjfADHWVC7oQX53KHdg2/oMmWIrCAKMUyvJ3SgjWTNF/JrxY=
 script:
 - curl -sSL https://raw.githubusercontent.com/ffuenf/MageTestStand/master/setup.sh
   | bash
-notifications:
-  slack:
-    secure: k6tbC+GIIZGXVSCr++gh1tVOMh1iuYynou/vPmi60VikCy0I0xrmHHRdao+XnTb+XRnj5Ev5cZ/6WXexrn2kEgqQSlpAYOObkrDj6QGG5KkShKmVYJ7RBQVwJGgn7jujz0Sx5MHAXA8Gf0RzwFb7Kn4wnncsX1O4Rb3/COw6gMA=
+before_deploy: .travis/bundle.sh
+deploy:
+  provider: releases
+  file:
+    - "Ffuenf_Pagespeed.zip"
+    - "Ffuenf_Pagespeed.tar.gz"
+  skip_cleanup: true
+  on:
+    branch: dev
