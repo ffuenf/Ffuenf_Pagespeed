@@ -1,5 +1,6 @@
 language: php
-sudo: required
+sudo: false
+rvm: 2.0.0
 php:
   - 5.3
   - 5.4
@@ -48,7 +49,7 @@ deploy:
   - Ffuenf_Pagespeed.tar.gz
   skip_cleanup: true
   on:
-    branch: dev
+    tag: true
   api_key:
     secure: gOnU1//rRmp2z70CLc2Vu0qcDF4wbmhTXQz/5sjKngBJwqgLnmdz+RU+CVrEetzNhFuXTVsSUwjpcOEHO/Dl9g4Wfn7crft+uLZ6x0sGb0ZCnr287bwmrR4zp5mdlAPOeosjv0WbSsGU8nkpa9qCzWGz91cT568xS0sJ4DAq1fo=
 notifications:
