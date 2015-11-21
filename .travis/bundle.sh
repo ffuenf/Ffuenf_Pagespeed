@@ -18,9 +18,8 @@ if [ -z $WORKSPACE ] ; then
   exit
 fi
 
-BUILDENV=`mktemp -d /tmp/${APPNAME}-release-${TRAVIS_TAG}`
-echo "Using build directory ${BUILDENV}"
-
+RELEASEDIR=`mktemp -d /tmp/${APPNAME}-release.XXXXXXXX`
+echo "Using release directory ${RELEASEDIR}"
 cd $WORKSPACE
 rsync -av \
   --exclude='.travis/' \
@@ -29,7 +28,9 @@ rsync -av \
   --exclude='.codeclimate.yml' \
   --exclude='.git/' \
   --exclude='.gitignore' \
-  . ${BUILDENV}/
-zip -r ${APPNAME}.zip ${BUILDENV}
-tar -czf ${APPNAME}.tar.gz ${BUILDENV}
-printf "\x1b[32mBundled release ${TRAVIS_TAG}\x1b[0m"
+  --exclude='Berksfile' \
+  --exclude='Vagrantfile' \
+  . ${RELEASEDIR}/
+zip -r ${APPNAME}.zip ${RELEASEDIR}
+tar -czf ${APPNAME}.tar.gz ${RELEASEDIR}
+printf "\x1b[32mBundled release XXX\x1b[0m"
