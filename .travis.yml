@@ -1,6 +1,6 @@
 language: php
 sudo: false
-rvm: 2.0.0
+rvm: 2.2.3
 php:
   - 5.3
   - 5.4
@@ -41,6 +41,8 @@ env:
 script:
 - curl -sSL https://raw.githubusercontent.com/ffuenf/MageTestStand/master/setup.sh
   | bash
+before_install:
+   - rvm install 2.2.3
 before_deploy: ".travis/bundle.sh"
 deploy:
   provider: releases
@@ -49,7 +51,7 @@ deploy:
   - Ffuenf_Pagespeed.tar.gz
   skip_cleanup: true
   on:
-    tag: true
+    branch: dev
   api_key:
     secure: gOnU1//rRmp2z70CLc2Vu0qcDF4wbmhTXQz/5sjKngBJwqgLnmdz+RU+CVrEetzNhFuXTVsSUwjpcOEHO/Dl9g4Wfn7crft+uLZ6x0sGb0ZCnr287bwmrR4zp5mdlAPOeosjv0WbSsGU8nkpa9qCzWGz91cT568xS0sJ4DAq1fo=
 notifications:
