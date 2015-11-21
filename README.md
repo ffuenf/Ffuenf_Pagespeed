@@ -56,9 +56,9 @@ modman clone https://github.com/ffuenf/Ffuenf_Pagespeed
 Deinstallation
 --------------
 
-#### via [MageTrashApp](https://github.com/magento-hackathon/MageTrashApp)
+#### via [Ffuenf_MageTrashApp](https://github.com/ffuenf/Ffuenf_MageTrashApp)
 
-An additional module called [MageTrashApp](https://github.com/magento-hackathon/MageTrashApp) has been installed to help you to uninstall this extension in a clean way.
+An additional module called [Ffuenf_MageTrashApp](https://github.com/ffuenf/Ffuenf_MageTrashApp) has been installed to help you to uninstall this extension in a clean way.
 If it is not yet installed, please install it from [MageTrashApp](https://github.com/magento-hackathon/MageTrashApp)
 If it is installed, go to your backend menu System > Configuration > Advanced > MageTrashApp, then click on the tab "Extension Installed", select the drop down option "Uninstall" of this extension and press "Save Config" button to uninstall
 If you use this extension, you don't need to make any queries in your database as explained below in case of manually uninstallation.
