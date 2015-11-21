@@ -31,6 +31,6 @@ rsync -av \
   --exclude='Berksfile' \
   --exclude='Vagrantfile' \
   . ${RELEASEDIR}/
-zip -r ${APPNAME}.zip ${RELEASEDIR}
-tar -czf ${APPNAME}.tar.gz ${RELEASEDIR}
+zip -r ${APPNAME}-${TRAVIS_TAG}.zip ${RELEASEDIR}
+tar -czf ${APPNAME}-${TRAVIS_TAG}.tar.gz ${RELEASEDIR}
 printf "\x1b[32mBundled release XXX\x1b[0m"
