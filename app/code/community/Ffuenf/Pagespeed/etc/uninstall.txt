@@ -1,0 +1,2 @@
+app/code/community/Ffuenf/Pagespeed
+app/etc/modules/Ffuenf_Pagespeed.xml
