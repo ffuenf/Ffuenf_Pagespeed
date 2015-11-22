@@ -39,6 +39,13 @@
                 <class>Ffuenf_Pagespeed_Model</class>
             </ffuenf_pagespeed>
         </models>
+        <resources>
+            <ffuenf_pagespeed_setup>
+                <setup>
+                    <module>Ffuenf_Pagespeed</module>
+                </setup>
+            </ffuenf_pagespeed_setup>
+        </resources>
     </global>
     <adminhtml>
         <events>
@@ -101,6 +108,9 @@
             </general>
         </ffuenf_pagespeed>
     </default>
+    <uninstall>
+        <filename>uninstall.txt</filename>
+    </uninstall>
     <phpunit>
         <suite>
             <modules>
