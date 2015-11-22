@@ -2,7 +2,9 @@
 
 This file is used to list changes made in each version of Ffuenf_Pagespeed.
 
-## 1.0.8 (November 21, 2015)
+## 1.0.9 (Unreleased)
+
+## 1.0.8 (November 22, 2015)
 
 * add uninstallation via [Ffuenf_MageTrashApp](https://github.com/ffuenf/Ffuenf_MageTrashApp)
 
