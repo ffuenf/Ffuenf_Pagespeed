@@ -35,7 +35,10 @@ class Ffuenf_Pagespeed_Test_Config_Setup extends EcomDev_PHPUnit_Test_Case_Confi
      */
     public function testSetupExists() {
         $this->assertSchemeSetupScriptVersions(
-            '1.0.0', $this->expected('module')->getVersion(), null, 'ffuenf_pagespeed_setup'
+            '1.0.0',
+            $this->expected('module')->getVersion(),
+            null,
+            'ffuenf_pagespeed_setup'
         );
     }
 }
