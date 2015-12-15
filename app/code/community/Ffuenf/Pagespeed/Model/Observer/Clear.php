@@ -28,9 +28,9 @@ class Ffuenf_Pagespeed_Model_Observer_Clear extends Varien_Event_Observer
         $filecachepath = Mage::helper('ffuenf_pagespeed')->getFilecachepath();
         $cacheflushfilename = Mage::helper('ffuenf_pagespeed')->getCacheflushfilename();
         if ($filecachepath != '') {
-            exec('rm -rf '.$filecachepath.'/*');
+            exec('rm -rf ' . $filecachepath . '/*');
         }
-        exec('touch '.$filecachepath.'/'.$cacheflushfilename);
+        exec('touch ' . $filecachepath . '/' . $cacheflushfilename);
 
         return true;
     }
