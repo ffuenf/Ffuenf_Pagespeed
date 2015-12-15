@@ -2,9 +2,7 @@
 
 This file is used to list changes made in each version of Ffuenf_Pagespeed.
 
-## 1.1.0 (Unreleased)
-
-## 1.0.9 (December 14, 2015)
+## 1.1.0 (December 15, 2015)
 
 * fix dependency declaration to Ffuenf_Common
 
