@@ -19,11 +19,11 @@ env:
   - secure: FFk/qpsw+Q7mhygEhsVbkJxZoBiJnzU8Z2wos9SY3/wdY8elYrO5qkgVbhnuRf9kTFAOXZFUbQai4GYsk2O1ZU1xuMo/iwCVoYTOvzYM1ujMSxRHDBgjq9nmjfnG02MMGjoc0cLWUNTZCUoaXS726kxB5ioY8ih2nt7AulpyM4A=
   - secure: WxDbt/6b9eJ88SuUmkEHnN14a8ujSfsr/930SN+zBpln960ObgrpOhhK2Sql0haE0zUqpuA+B54VYdCJNmyXFdBVB2AWAQC9Fq9KIxZTRwpxQVlf5UBif9mOlqFaNXDVQKB5/Ayuus+mOLoG3xLrpzVTqI7hO4EURJEHJWqo58M=
   matrix:
-  - MAGENTO_VERSION=magento-ce-1.9.2.3
+  - MAGENTO_VERSION=magento-ce-1.9.2.4
   - MAGENTO_VERSION=magento-ce-1.9.1.1
-  - MAGENTO_VERSION=magento-ce-1.8.1.0
-  - MAGENTO_VERSION=magento-ce-1.7.0.2
-  - MAGENTO_VERSION=magento-ce-1.6.2.0
+  - MAGENTO_VERSION=magento-mirror-1.8.1.0
+  - MAGENTO_VERSION=magento-mirror-1.7.0.2
+  - MAGENTO_VERSION=magento-mirror-1.6.2.0
 before_script:
 - composer self-update
 - composer install --prefer-source

@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of Ffuenf_Pagespeed.
 
+## 1.1.3 (February 24, 2016)
+
+* update travis build-matrix
+* [docs] copyright notice
+
 ## 1.1.2 (February 6, 2016)
 
 * update travis build-matrix
